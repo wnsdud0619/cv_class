@@ -1,9 +1,9 @@
 import cv2 as cv
 import numpy as np
 
-img1 = cv.imread('mot_color70.jpg')[190:350, 440:560]  # 모델 영상 (버스)
+img1 = cv.imread('/home/jykim/cv_class/mot_color70.jpg')[190:350, 440:560]  # 모델 영상 (버스)
 gray1 = cv.cvtColor(img1, cv.COLOR_BGR2GRAY)
-img2 = cv.imread('mot_color83.jpg')  # 장면 영상
+img2 = cv.imread('/home/jykim/cv_class/mot_color83.jpg')  # 장면 영상
 gray2 = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)
 
 sift = cv.SIFT_create()
